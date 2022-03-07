@@ -22,3 +22,11 @@ Copy and paste configExample.ts into the file.
 docker compose up
 yarn start
 ```
+
+## Analysis
+
+The results of the load test can be visualized with influxdb and grafana set up with docker-compose.
+
+You can visualize vus and duration.
+
+![img](https://i.imgur.com/tTffyvw.png)
