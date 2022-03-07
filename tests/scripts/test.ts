@@ -16,7 +16,7 @@ const password = config.admin.password;
 
 const account_login = (username: string, password: string) => {
   const url = urlbase + "/login";
-  const payload = { email: username, password: password, errors: [] };
+  const payload = { email: username, password: password};
   return http.post(url, JSON.stringify(payload), {headers: {"Content-Type": "application/json"}});
 };
 
