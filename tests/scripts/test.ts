@@ -16,7 +16,7 @@ const password = config.admin.password;
 
 const account_login = (username: string, password: string) => {
   const url = urlbase + "/login";
-  const payload = { username: username, password: password};
+  const payload = { email: username, password: password, errors: [] };
   return http.post(url, JSON.stringify(payload), {headers: {"Content-Type": "application/json"}});
 };
 
@@ -47,7 +47,7 @@ export default function() {
     check(res, {
       "status is ok": (res) => res.status < 400,
       "content-type is application/json": (res) => res.headers['Content-Type'] === "application/json; charset=utf-8",
-      "login check": (res) => typeof res.body === "string" ? JSON.parse(res.body)["username"] === username : false
+      "login check": (res) => typeof res.body === "string" ? JSON.parse(res.body)["email"] === username : false
     });
     myTrend.add(res.timings.duration);
     sleep(sleepTime);

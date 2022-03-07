@@ -8,7 +8,7 @@ K6 can be used to easily perform load testing, but there is not much information
 
 - K6 with TypeScript
 - K6 run on Docker
-- K6 scenario with cookie
+- K6 scenario with cookie auth
 
 ## Setup
 
