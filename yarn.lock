@@ -952,7 +952,7 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
-"@types/k6@~0.36.0":
+"@types/k6@0.36.0":
   version "0.36.0"
   resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.36.0.tgz#9e8b01bef7e5d41f897de7a5a9c15955a882aff5"
   integrity sha512-VyPK2Nl4CeQ6MPcwt6pev0knT+2XeN0fsu+o/okPYpnMttyTmAzqU7r+1qnYzdLm7pfU5z2Rtd40aRgRiLAh5A==
@@ -1468,7 +1468,7 @@ convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
-copy-webpack-plugin@^9.0.1:
+copy-webpack-plugin@9.1.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-9.1.0.tgz#2d2c460c4c4695ec0a58afb2801a1205256c4e6b"
   integrity sha512-rxnR7PaGigJzhqETHGmAcxKnLZSR5u1Y3/bcIv/1FnqXedcL/E2ewK7ZCNrArJKCiSv8yVXhTqetJh8inDvfsA==
@@ -2546,7 +2546,7 @@ webpack-cli@4.6.0:
     v8-compile-cache "^2.2.0"
     webpack-merge "^5.7.3"
 
-webpack-glob-entries@^1.0.1:
+webpack-glob-entries@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/webpack-glob-entries/-/webpack-glob-entries-1.0.1.tgz#efd25ec6289c0c805c79f071fd31f195ac437895"
   integrity sha1-79JexiicDIBcefBx/THxlaxDeJU=
