@@ -18,5 +18,6 @@ jobs:
       - name: Test Scenario
         shell: bash
         run: |
+          yarn install
           docker-compose up -d
           yarn start httpGet

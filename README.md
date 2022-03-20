@@ -37,7 +37,8 @@ Specify a test scenario file as the argument to `yarn start`. File extension is 
 After the transpile is executed in TSC, it will be entered into the k6 container and the test will be executed.
 
 ```
-docker compose up
+yarn install
+docker compose up -d
 yarn start testFileNoExtension
 ```
 
