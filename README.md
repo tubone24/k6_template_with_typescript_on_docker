@@ -95,6 +95,14 @@ Done in 6.27s.
 
 ```
 
+### Clean DB
+
+If you want to clean up the execution result once, run the following command.
+
+```
+yarn clean:db
+```
+
 ## Analysis
 
 The results of the load test can be visualized with influxdb and grafana set up with docker-compose.
