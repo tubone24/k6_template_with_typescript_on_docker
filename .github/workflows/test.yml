@@ -15,7 +15,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - name: Test Scenario
+      - name: setup config
+        run: mv tests/config/configExample.ts tests/config/config.ts
+      - name: test scenario
         shell: bash
         run: |
           yarn install
