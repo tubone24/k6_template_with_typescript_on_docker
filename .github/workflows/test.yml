@@ -17,9 +17,10 @@ jobs:
           node-version: 14.x
       - name: setup config
         run: mv tests/config/configExample.ts tests/config/config.ts
-      - name: test scenario
+      - name: Setup test Env
         run: |
           yarn install
           docker-compose up -d
           yarn build
-          docker compose run k6 run --compatibility-mode=base - < ./dist/httpGet.js
+      - name: run
+        run: docker compose run k6 run --compatibility-mode=base - < ./dist/httpGet.js
