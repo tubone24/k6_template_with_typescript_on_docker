@@ -21,4 +21,5 @@ jobs:
         run: |
           yarn install
           docker-compose up -d
-          yarn start httpGet
+          yarn build
+          docker compose run k6 run --compatibility-mode=base - < ./dist/httpGet.js
