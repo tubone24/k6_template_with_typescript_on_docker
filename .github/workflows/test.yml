@@ -23,4 +23,6 @@ jobs:
           docker-compose up -d
           yarn build
       - name: run
+        # In GitHub Actions, if pseudo-tty is assigned in case of docker compose run,
+        # container execution will continue and step will not be completed, so disable it with -T option.
         run: docker compose run -T k6 run --compatibility-mode=base - < ./dist/httpGet.js
