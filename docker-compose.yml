@@ -11,7 +11,7 @@ services:
       - k6net
       - grafanaNet
     volumes:
-      - ./influxdb/data:/var/lib/influxdb
+      - ./influxdb:/var/lib/influxdb
 
   k6:
     image: grafana/k6:latest
