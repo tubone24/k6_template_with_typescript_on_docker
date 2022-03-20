@@ -18,7 +18,6 @@ jobs:
       - name: setup config
         run: mv tests/config/configExample.ts tests/config/config.ts
       - name: test scenario
-        shell: bash
         run: |
           yarn install
           docker-compose up -d
