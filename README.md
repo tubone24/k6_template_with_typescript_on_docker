@@ -109,4 +109,4 @@ The results of the load test can be visualized with influxdb and grafana set up 
 
 You can visualize vus and duration.
 
-![img](https://i.imgur.com/tTffyvw.png)
+![img](https://i.imgur.com/sX5HtCG.png)

@@ -22,7 +22,7 @@ services:
     environment:
       - K6_OUT=influxdb=http://influxdb:8086/k6
     volumes:
-      - ./tests/scripts:/scripts
+      - ./dist:/scripts
 
   grafana:
     image: grafana/grafana:latest
