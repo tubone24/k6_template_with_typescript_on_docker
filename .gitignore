@@ -2,3 +2,5 @@
 dist
 tests/config/config.ts
 node_modules
+influxdb/data
+!.gitkeep
