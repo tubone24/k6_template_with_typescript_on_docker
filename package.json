@@ -19,6 +19,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "sh -c \"webpack && docker compose run k6 run - < ./dist/${0}.js\""
+    "start": "sh -c \"webpack && docker compose run k6 run --compatibility-mode=base - < ./dist/${0}.js\""
   }
 }
