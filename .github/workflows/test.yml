@@ -23,4 +23,7 @@ jobs:
           docker-compose up -d
           yarn build
       - name: run
+        shell: bash
+        env:
+          COMPOSE_INTERACTIVE_NO_CLI: 1
         run: docker compose run k6 run --compatibility-mode=base - < ./dist/httpGet.js
