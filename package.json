@@ -21,6 +21,7 @@
   "scripts": {
     "build": "webpack",
     "start": "yarn build && scripts/start_test.sh",
+    "start:windows": "sh -c \"webpack && docker compose run k6 run --compatibility-mode=base - < ./dist/${0}.js\"",
     "clean:db": "rimraf influxdb/data && rimraf influxdb/meta && rimraf influxdb/wal"
   }
 }
