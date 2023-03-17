@@ -13,7 +13,7 @@
     "clean-webpack-plugin": "4.0.0-alpha.0",
     "copy-webpack-plugin": "9.1.0",
     "rimraf": "^3.0.2",
-    "typescript": "4.2.4",
+    "typescript": "4.9.5",
     "webpack": "5.35.1",
     "webpack-cli": "4.6.0",
     "webpack-glob-entries": "1.0.1"
